@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>En-ROADS</title>
+	<meta charset="UTF-8">
+	<script>!function(e,a,t,n,g,c,o){e.GoogleAnalyticsObject=g,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),o=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",o.parentNode.insertBefore(c,o)}(window,document,"script",0,"ga"),ga("create","UA-148803317-1","auto"),ga("send","pageview");</script>
+	<link rel="stylesheet" href="web.f180c7e1.css">
+</head>
+<body> <div class="container-fluid main-wnd" id="app" v-cloak="">  <div class="row" id="appMenu"> <div class="col-xs-12"> <a href="https://www.climateinteractive.org/tools/en-roads/" target="blank">
+	<img src="En-ROADS_color_halflines.f6ace368.svg" class="appLogo" alt="En-ROADS app logo">
+</a> <ul class="nav nav-tabs">
+</ul> &nbsp; <span class="appMenuBtn" id="resetAllBtn">
+	<span class="fa-undo far">
+	</span>
+</span> <span class="appMenuBtn" id="defaultGraphsBtn">
+	<span class="fa-home far">
+	</span>
+</span> &nbsp;&nbsp; <span class="appMenuBtn" id="undoBtn">
+	<span class="fa-arrow-left far">
+	</span>
+</span> <span class="appMenuBtn" id="redoBtn">
+	<span class="fa-arrow-right far">
+	</span>
+</span> <span class="appMenuBtn" id="replayBtn">
+	<span class="fa-repeat far">
+	</span>
+</span> &nbsp;&nbsp; <span class="appMenuBtn" id="fullscreenToggle">
+	<span class="fa-expand far">
+	</span>
+</span> <span class="appMenuBtn" id="miniatureGraphsBtn">
+	<span class="fa-th far">
+	</span>
+</span> <span class="appMenuBtn" id="docIndexLink">
+	<span class="fa-info-circle far">
+	</span>
+</span> <a class="grayBtn pull-right" id="shareMenu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+	<img id="shareIcon" src="share-icon.de63f16f.svg">{{ $t('share_menu__share_your_scenario') }}</a> <ul class="dropdown-menu pull-right"> <li> <a id="shareTwitter">
+		<i class="fa-twitter fab">
+		</i>&nbsp;&nbsp;{{ $t('share_menu__share_on_twitter') }}</a> </li> <li> <a id="shareFacebook">
+			<i class="fa-facebook fab">
+			</i>&nbsp;&nbsp;{{ $t('share_menu__share_on_facebook') }}</a> </li> <li> <a id="shareLinkedIn">
+				<i class="fa-linkedin fab">
+				</i>&nbsp;&nbsp;{{ $t('share_menu__share_on_linked_in') }}</a> </li> <li> <a id="shareEmail">
+					<i class="fa-envelope far">
+					</i>&nbsp;&nbsp;{{ $t('share_menu__share_by_email') }}</a> </li> <li> <a id="copyScenarioLink">
+						<i class="fa-copy far">
+						</i>&nbsp;&nbsp;{{ $t('share_menu__copy_scenario_link') }}</a> </li> </ul> <img src="En-ROADS_BETA.0d00da7c.svg" class="appLogo pull-right" alt="En-ROADS BETA"> </div> </div>  <div class="row" id="chartSection"> <div id="mainChartPanel"> <div class="col-xs-5"> <div id="chartTitle0" class="chartTitle"> <span class="chartHelp">
+							<span class="fa-caret-right fas" id="chartHelp0">
+							</span>
+						</span> <span class="chartMenuTarget" id="chartMenuTarget0">
+						</span> <span class="copyGraphDataBtn">
+							<span class="fa-copy far" id="copyGraphDataBtn0">
+							</span>
+						</span> </div> <canvas id="canvas0">
+						</canvas> <div id="legendContainer0">
+						</div> <div id="chartDesc0">
+						</div> <div class="panel-group" id="chartMenu" role="tablist" aria-multiselectable="true">
+						</div> </div> <div class="col-xs-5"> <div id="chartTitle1" class="chartTitle"> <span class="chartHelp">
+							<span class="fa-caret-right fas" id="chartHelp1">
+							</span>
+						</span> <span class="chartMenuTarget" id="chartMenuTarget1">
+						</span> <span class="copyGraphDataBtn">
+							<span class="fa-copy far" id="copyGraphDataBtn1">
+							</span>
+						</span> </div> <canvas id="canvas1">
+						</canvas> <div id="legendContainer1">
+						</div> <div id="chartDesc1">
+						</div> </div> <div class="col-xs-2"> <div class="tempPanel"> <div class="tempGauge"> <div class="tempBox"> <div class="primaryTemp"> <span class="tempIncreaseValue">
+						</span>
+						<span class="tempIncreaseUnits">
+						</span> </div> <div class="secondaryTemp"> <span class="secondaryTempIncreaseValue">
+						</span>
+						<span class="secondaryTempIncreaseUnits">
+						</span> </div> <div class="tempIncreaseLabel" v-html="$t('temperature_box__increase_by_2100')">
+						</div> </div> </div> </div> </div> </div> <div id="kayaChartPanel"> <div class="col-xs-12"> <div class="row" id="kayaPanelTitle"> <div class="col-xs-12"> <span class="kayaHelp"> <span class="fa-caret-right fas" id="chartHelp3">
+						</span> </span> <span class="kayaHelpLabel"> {{ $t('__kaya_graphs') }}</span> </div> </div> <div class="row" id="kayaChartsAndTemp"> <div class="col-xs-2"> <div id="chartTitle3" class="chartTitle">
+						</div> <canvas id="canvas3">
+						</canvas> </div> <div class="col-xs-2"> <div id="chartTitle4" class="chartTitle">
+						</div> <canvas id="canvas4">
+						</canvas> </div> <div class="col-xs-2"> <div id="chartTitle5" class="chartTitle">
+						</div> <canvas id="canvas5">
+						</canvas> </div> <div class="col-xs-2"> <div id="chartTitle6" class="chartTitle">
+						</div> <canvas id="canvas6">
+						</canvas> </div> <div class="col-xs-2"> <div id="chartTitle7" class="chartTitle">
+						</div> <canvas id="canvas7">
+						</canvas> </div> <div class="col-xs-2"> <div class="row tempPanel"> <div class="tempGauge"> <div class="tempBox"> <div class="primaryTemp"> <span class="tempIncreaseValue">
+						</span>
+						<span class="tempIncreaseUnits">
+						</span> </div> <div class="secondaryTemp"> <span class="secondaryTempIncreaseValue">
+						</span>
+						<span class="secondaryTempIncreaseUnits">
+						</span> </div> <div class="tempIncreaseLabel" v-html="$t('temperature_box__increase_by_2100')">
+						</div> </div> </div> </div> </div> </div> <div class="row" id="legendContainer3"> </div> <div id="chartDesc3">
+						</div> </div> </div> <div id="miniatureChartPanel"> <div id="miniatureChartsRow1" class="row"> <div class="col-xs-2"> <div id="chartTitle8" class="miniatureChartTitle">
+						</div> <canvas id="canvas8" class="miniatureChartCanvas">
+						</canvas> </div> <div class="col-xs-2"> <div id="chartTitle9" class="miniatureChartTitle">
+						</div> <canvas id="canvas9" class="miniatureChartCanvas">
+						</canvas> </div> <div class="col-xs-2"> <div id="chartTitle10" class="miniatureChartTitle">
+						</div> <canvas id="canvas10" class="miniatureChartCanvas">
+						</canvas> </div> <div class="col-xs-2"> <div id="chartTitle11" class="miniatureChartTitle">
+						</div> <canvas id="canvas11" class="miniatureChartCanvas">
+						</canvas> </div> <div class="col-xs-2"> <div id="chartTitle12" class="miniatureChartTitle">
+						</div> <canvas id="canvas12" class="miniatureChartCanvas">
+						</canvas> </div> <div class="col-xs-2"> <div id="chartTitle13" class="miniatureChartTitle">
+						</div> <canvas id="canvas13" class="miniatureChartCanvas">
+						</canvas> </div> </div> <div id="miniatureChartsRow2" class="row"> <div class="col-xs-2"> <div id="chartTitle14" class="miniatureChartTitle">
+						</div> <canvas id="canvas14" class="miniatureChartCanvas">
+						</canvas> </div> <div class="col-xs-2"> <div id="chartTitle15" class="miniatureChartTitle">
+						</div> <canvas id="canvas15" class="miniatureChartCanvas">
+						</canvas> </div> <div class="col-xs-2"> <div id="chartTitle16" class="miniatureChartTitle">
+						</div> <canvas id="canvas16" class="miniatureChartCanvas">
+						</canvas> </div> <div class="col-xs-2"> <div id="chartTitle17" class="miniatureChartTitle">
+						</div> <canvas id="canvas17" class="miniatureChartCanvas">
+						</canvas> </div> <div class="col-xs-2"> <div id="chartTitle18" class="miniatureChartTitle">
+						</div> <canvas id="canvas18" class="miniatureChartCanvas">
+						</canvas> </div> <div class="col-xs-2"> <div id="chartTitle19" class="miniatureChartTitle">
+						</div> <canvas id="canvas19" class="miniatureChartCanvas">
+						</canvas> </div> </div> </div> </div>  <div class="row" id="inputSection"> <div id="basicPanel" class="inputPanel"> <div class="col-xs-4"> <div class="row"> <div class="col-xs-12"> <div class="inputSectionHeader"> {{ $t('basic_section_header__energy_supply') }} </div> </div> </div> <div class="row"> <div class="col-xs-6"> <div class="basicSliderPanel firstSlider" id="_source_subsidy_delivered_coal_tce_basic_panel"> <label class="basicSliderLabel" for="_source_subsidy_delivered_coal_tce_basic_input" data-view="coalView">{{ $t('policy_group_001_short_title') }}</label> <span class="advancedViewBtn" data-view="coalView">
+							<span class="fa-ellipsis-v far">
+							</span>
+						</span>
+						<br> <input type="text" id="_source_subsidy_delivered_coal_tce_basic_input"> <div class="sliderQual" id="_source_subsidy_delivered_coal_tce_basic_qual">
+						</div> </div> </div> <div class="col-xs-6"> <div class="basicSliderPanel lastSlider" id="_source_subsidy_renewables_kwh_basic_panel"> <label class="basicSliderLabel" for="_source_subsidy_renewables_kwh_basic_input" data-view="renewablesView">{{ $t('policy_group_005_short_title') }}</label>
+							<span class="advancedViewBtn" data-view="renewablesView">
+								<span class="fa-ellipsis-v far" id="_source_subsidy_renewables_kwh_adv_btn">
+								</span>
+							</span>
+							<br> <input type="text" id="_source_subsidy_renewables_kwh_basic_input"> <div class="sliderQual" id="_source_subsidy_renewables_kwh_basic_qual">
+							</div> </div> </div> </div> <div class="row"> <div class="col-xs-6"> <div class="basicSliderPanel firstSlider" id="_source_subsidy_delivered_oil_boe_basic_panel"> <label class="basicSliderLabel" for="_source_subsidy_delivered_oil_boe_basic_input" data-view="oilView">{{ $t('policy_group_002_short_title') }}</label>
+								<span class="advancedViewBtn" data-view="oilView">
+									<span class="fa-ellipsis-v far">
+									</span>
+								</span>
+								<br> <input type="text" id="_source_subsidy_delivered_oil_boe_basic_input"> <div class="sliderQual" id="_source_subsidy_delivered_oil_boe_basic_qual">
+								</div> </div> </div> <div class="col-xs-6"> <div class="basicSliderPanel lastSlider" id="_source_subsidy_nuclear_kwh_basic_panel"> <label class="basicSliderLabel" for="_source_subsidy_nuclear_kwh_basic_input" data-view="nuclearView">{{ $t('policy_group_006_short_title') }}</label>
+									<span class="advancedViewBtn" data-view="nuclearView">
+										<span class="fa-ellipsis-v far">
+										</span>
+									</span>
+									<br> <input type="text" id="_source_subsidy_nuclear_kwh_basic_input"> <div class="sliderQual" id="_source_subsidy_nuclear_kwh_basic_qual">
+									</div> </div> </div> </div> <div class="row"> <div class="col-xs-6"> <div class="basicSliderPanel firstSlider" id="_source_subsidy_delivered_gas_mcf_basic_panel"> <label class="basicSliderLabel" for="_source_subsidy_delivered_gas_mcf_basic_input" data-view="gasView">{{ $t('policy_group_003_short_title') }}</label>
+										<span class="advancedViewBtn" data-view="gasView">
+											<span class="fa-ellipsis-v far">
+											</span>
+										</span>
+										<br> <input type="text" id="_source_subsidy_delivered_gas_mcf_basic_input"> <div class="sliderQual" id="_source_subsidy_delivered_gas_mcf_basic_qual">
+										</div> </div> </div> <div class="col-xs-6"> <div class="basicSliderPanel lastSlider" id="_new_tech_breakthrough_setting_basic_panel"> <label class="basicSliderLabel" for="_new_tech_breakthrough_setting_basic_input" data-view="newTechView">{{ $t('policy_group_007_short_title') }}</label>
+											<span class="advancedViewBtn" data-view="newTechView">
+												<span class="fa-ellipsis-v far">
+												</span>
+											</span>
+											<br> <input type="text" id="_new_tech_breakthrough_setting_basic_input"> <div class="sliderQual" id="_new_tech_breakthrough_setting_basic_qual">
+											</div> </div> </div> </div> <div class="row"> <div class="col-xs-6"> <div class="basicSliderPanel firstSlider" id="_source_subsidy_delivered_bio_boe_basic_panel"> <label class="basicSliderLabel" for="_source_subsidy_delivered_bio_boe_basic_input" data-view="bioenergyView">{{ $t('policy_group_004_short_title') }}</label>
+												<span class="advancedViewBtn" data-view="bioenergyView">
+													<span class="fa-ellipsis-v far">
+													</span>
+												</span>
+												<br> <input type="text" id="_source_subsidy_delivered_bio_boe_basic_input"> <div class="sliderQual" id="_source_subsidy_delivered_bio_boe_basic_qual">
+												</div> </div> </div> <div class="col-xs-6"> <div class="basicSliderPanel lastSlider" id="_carbon_tax_initial_target_basic_panel"> <label class="basicSliderLabel" for="_carbon_tax_initial_target_basic_input" data-view="carbonPriceView">{{ $t('policy_group_008_short_title') }}</label>
+													<span class="advancedViewBtn" data-view="carbonPriceView">
+														<span class="fa-ellipsis-v far">
+														</span>
+													</span>
+													<br> <input type="text" id="_carbon_tax_initial_target_basic_input"> <div class="sliderQual" id="_carbon_tax_initial_target_basic_qual">
+													</div> </div> </div> </div> </div> <div class="col-xs-4"> <div class="row"> <div class="col-xs-12"> <div class="inputSectionHeader"> {{ $t('basic_section_header__transport') }} </div> </div> </div> <div class="row"> <div class="col-xs-6"> <div class="basicSliderPanel firstSlider" id="_annual_improvement_to_energy_efficiency_of_new_capital_transport_basic_panel"> <label class="basicSliderLabel" for="_annual_improvement_to_energy_efficiency_of_new_capital_transport_basic_input" data-view="transportEfficiencyView">{{ $t('policy_group_009_short_title') }}</label>
+														<span class="advancedViewBtn" data-view="transportEfficiencyView">
+															<span class="fa-ellipsis-v far">
+															</span>
+														</span>
+														<br> <input type="text" id="_annual_improvement_to_energy_efficiency_of_new_capital_transport_basic_input"> <div class="sliderQual" id="_annual_improvement_to_energy_efficiency_of_new_capital_transport_basic_qual">
+														</div> </div> </div> <div class="col-xs-6"> <div class="basicSliderPanel lastSlider" id="_electrify_new_transport_basic_panel"> <label class="basicSliderLabel" for="_electrify_new_transport_basic_input" data-view="transportElectrificationView">{{ $t('policy_group_010_short_title') }}</label>
+															<span class="advancedViewBtn" data-view="transportElectrificationView">
+																<span class="fa-ellipsis-v far">
+																</span>
+															</span>
+															<br> <input type="text" id="_electrify_new_transport_basic_input"> <div class="sliderQual" id="_electrify_new_transport_basic_qual">
+															</div> </div> </div> </div> <div class="row"> <div class="col-xs-12"> <div class="inputSectionHeader"> {{ $t('basic_section_header__buildings_and_industry') }} </div> </div> </div> <div class="row"> <div class="col-xs-6"> <div class="basicSliderPanel firstSlider" id="_annual_improvement_to_energy_efficiency_of_new_capital_stationary_basic_panel"> <label class="basicSliderLabel" for="_annual_improvement_to_energy_efficiency_of_new_capital_stationary_basic_input" data-view="stationaryEfficiencyView">{{ $t('policy_group_011_short_title') }}</label>
+																<span class="advancedViewBtn" data-view="stationaryEfficiencyView">
+																	<span class="fa-ellipsis-v far">
+																	</span>
+																</span>
+																<br> <input type="text" id="_annual_improvement_to_energy_efficiency_of_new_capital_stationary_basic_input"> <div class="sliderQual" id="_annual_improvement_to_energy_efficiency_of_new_capital_stationary_basic_qual">
+																</div> </div> </div> <div class="col-xs-6"> <div class="basicSliderPanel lastSlider" id="_electrify_new_stationary_basic_panel"> <label class="basicSliderLabel" for="_electrify_new_stationary_basic_input" data-view="stationaryElectrificationView">{{ $t('policy_group_012_short_title') }}</label>
+																	<span class="advancedViewBtn" data-view="stationaryElectrificationView">
+																		<span class="fa-ellipsis-v far">
+																		</span>
+																	</span>
+																	<br> <input type="text" id="_electrify_new_stationary_basic_input"> <div class="sliderQual" id="_electrify_new_stationary_basic_qual">
+																	</div> </div> </div> </div> <div class="row"> <div class="col-xs-12"> <div class="inputSectionHeader"> {{ $t('basic_section_header__growth') }} </div> </div> </div> <div class="row"> <div class="col-xs-6"> <div class="basicSliderPanel firstSlider" id="_global_population_scenario_basic_panel"> <label class="basicSliderLabel" for="_global_population_scenario_basic_input" data-view="populationView">{{ $t('policy_group_013_short_title') }}</label>
+																		<span class="advancedViewBtn" data-view="populationView">
+																			<span class="fa-ellipsis-v far">
+																			</span>
+																		</span>
+																		<br> <input type="text" id="_global_population_scenario_basic_input"> <div class="sliderQual" id="_global_population_scenario_basic_qual">
+																		</div> </div> </div> <div class="col-xs-6"> <div class="basicSliderPanel lastSlider" id="_long_term_gdp_per_capita_rate"> <label class="basicSliderLabel" for="_long_term_gdp_per_capita_rate_basic_input" data-view="economicGrowthView">{{ $t('policy_group_014_short_title') }}</label>
+																			<span class="advancedViewBtn" data-view="economicGrowthView">
+																				<span class="fa-ellipsis-v far">
+																				</span>
+																			</span>
+																			<br> <input type="text" id="_long_term_gdp_per_capita_rate_basic_input"> <div class="sliderQual" id="_long_term_gdp_per_capita_rate_basic_qual">
+																			</div> </div> </div> </div> </div> <div class="col-xs-4"> <div class="row"> <div class="col-xs-12"> <div class="inputSectionHeader"> {{ $t('basic_section_header__land_and_industry_emissions') }} </div> </div> </div> <div class="row"> <div class="col-xs-6"> <div class="basicSliderPanel firstSlider" id="_annual_rate_of_change_in_land_use_emissions_basic_panel"> <label class="basicSliderLabel" for="_annual_rate_of_change_in_land_use_emissions_basic_input" data-view="landUseEmissionsView">{{ $t('policy_group_015_short_title') }}</label>
+																				<span class="advancedViewBtn" data-view="landUseEmissionsView">
+																					<span class="fa-ellipsis-v far">
+																					</span>
+																				</span>
+																				<br> <input type="text" id="_annual_rate_of_change_in_land_use_emissions_basic_input"> <div class="sliderQual" id="_annual_rate_of_change_in_land_use_emissions_basic_qual">
+																				</div> </div> </div> <div class="col-xs-6"> <div class="basicSliderPanel lastSlider" id="_target_change_in_other_ghgs_basic_panel"> <label class="basicSliderLabel" for="_target_change_in_other_ghgs_basic_input" data-view="nonCO2GasesView">{{ $t('policy_group_016_short_title') }}</label>
+																					<span class="advancedViewBtn" data-view="nonCO2GasesView">
+																						<span class="fa-ellipsis-v far">
+																						</span>
+																					</span>
+																					<br> <input type="text" id="_target_change_in_other_ghgs_basic_input"> <div class="sliderQual" id="_target_change_in_other_ghgs_basic_qual">
+																					</div> </div> </div> </div> <div class="row"> <div class="col-xs-12"> <div class="inputSectionHeader"> {{ $t('basic_section_header__carbon_removal') }} </div> </div> </div> <div class="row"> <div class="col-xs-6"> <div class="basicSliderPanel firstSlider" id="_percent_available_land_for_afforestation_basic_panel"> <label class="basicSliderLabel" for="_percent_available_land_for_afforestation_basic_input" data-view="afforestationView">{{ $t('policy_group_017_short_title') }}</label> <span class="advancedViewBtn" data-view="afforestationView">
+																						<span class="fa-ellipsis-v far">
+																						</span>
+																					</span>
+																					<br> <input type="text" id="_percent_available_land_for_afforestation_basic_input"> <div class="sliderQual" id="_percent_available_land_for_afforestation_basic_qual">
+																					</div> </div> </div> <div class="col-xs-6"> <div class="basicSliderPanel lastSlider" id="_non_afforestation_percent_of_max_cdr_achieved_basic_panel"> <label class="basicSliderLabel" for="_non_afforestation_percent_of_max_cdr_achieved_basic_input" data-view="cdrView">{{ $t('policy_group_018_short_title') }}</label>
+																						<span class="advancedViewBtn" data-view="cdrView">
+																							<span class="fa-ellipsis-v far">
+																							</span>
+																						</span>
+																						<br> <input type="text" id="_non_afforestation_percent_of_max_cdr_achieved_basic_input"> <div class="sliderQual" id="_non_afforestation_percent_of_max_cdr_achieved_basic_qual">
+																						</div> </div> </div> </div> <div class="logoPanel"> <a href="https://www.climateinteractive.org/" target="blank" class="ciLogo">
+																							<img src="CI_logo_gray.e55f345f.svg" class="logoImg" alt="Climate Interactive logo">
+																						</a> <a href="http://mitsloan.mit.edu/sustainability/" target="blank" class="mitLogo">
+																							<img src="mit_sustainability_logo_gray.ca5739d1.png" class="logoImg" alt="MIT Sustainability Initiative logo">
+																						</a> </div> <div class="logoPanel row"> <a href="https://www.climateinteractive.org/climate/tools/en-roads/en-roads-trainings/" target="blank" class="grayBtn">{{ $t('__en_roads_climate_ambassador_training') }}</a> </div> </div> </div>  <div id="advancedPanel" class="inputPanel"> <header> <span id="advancedTitle">
+																						</span> <select id="advancedGraphSelector" class="form-control">
+																						</select>&nbsp; <span id="advancedGraphIcon" class="advancedHeaderIcon">
+																							<span class="fa-chart-bar far">
+																							</span>
+																						</span>&nbsp; <span id="advancedDocIcon" class="advancedHeaderIcon">
+																							<span class="fa-info-circle far">
+																							</span>
+																						</span>&nbsp; <span id="advancedCloseIcon" class="advancedHeaderIcon">
+																							<span class="fa-times-circle far">
+																							</span>
+																						</span> </header> <div class="row"> <div class="col-xs-7"> <div id="advancedIntro"> <img id="advancedIntroIcon" src="#" alt="icon"> <span id="advancedIntroDesc">
+																						</span> </div> <div id="advancedInputPanel">
+																						</div> </div> <div class="col-xs-5" id="embedArea"> <div id="advancedGraph"> <div id="chartTitle2">
+																						</div> <canvas id="canvas2">
+																						</canvas> <div id="legendContainer2">
+																						</div> </div> <div id="advancedDoc">
+																						</div> </div> </div> </div>  <div id="assumptionsPanel" class="inputPanel"> <header> <span id="assumptionsTitle">{{ $t('__assumptions') }}</span> <span id="assumptionsReset">
+																							<span class="fa-undo far">
+																							</span>
+																						</span>&nbsp; <span id="assumptionsClose">
+																							<span class="fa-times-circle far">
+																							</span>
+																						</span> </header> <div id="assumptionsInputPanel"> </div> </div>  <div id="quickRefPanel" class="inputPanel"> <div class="quickRefHeader"> <span id="quickRefTitle">{{ $t('__related_examples') }}</span> <span id="quickRefClose">
+																							<span class="fa-times-circle far">
+																							</span>
+																						</span> </div> <div class="col-xs-4"> <div class="row"> <div class="col-xs-12"> <div class="inputSectionHeader"> {{ $t('basic_section_header__energy_supply') }} </div> </div> </div> <div class="row"> <div class="col-xs-6"> <div class="firstRef refItem"> <div class="refItemTitle"> {{ $t('policy_group_001_short_title') }} </div> <div class="refItemBody"> <img class="refItemIcon" src="view-icon-01.a378c23f.svg" alt="icon"> <span class="refItemDesc">{{ $t('related_example__taxes') }}<br> {{ $t('related_example__less_subsidies') }}<br> {{ $t('related_example__air_pollution') }}</span> </div> </div> </div> <div class="col-xs-6"> <div class="lastRef refItem"> <div class="refItemTitle"> {{ $t('policy_group_005_short_title') }} </div> <div class="refItemBody"> <img class="refItemIcon" src="view-icon-05.07ba19a2.svg" alt="icon"> <span class="refItemDesc">{{ $t('related_example__wind_solar_hydro') }}<br> {{ $t('related_example__clean_energy') }}<br> {{ $t('related_example__subsidies') }}</span> </div> </div> </div> </div> <div class="row"> <div class="col-xs-6"> <div class="firstRef refItem"> <div class="refItemTitle"> {{ $t('policy_group_002_short_title') }} </div> <div class="refItemBody"> <img class="refItemIcon" src="view-icon-04.062246ef.svg" alt="icon"> <span class="refItemDesc">{{ $t('related_example__less_subsidies') }}<br> {{ $t('related_example__pipelines') }}<br> {{ $t('related_example__divestment') }}</span> </div> </div> </div> <div class="col-xs-6"> <div class="lastRef refItem"> <div class="refItemTitle"> {{ $t('policy_group_006_short_title') }} </div> <div class="refItemBody"> <img class="refItemIcon" src="view-icon-18.5f440485.svg" alt="icon"> <span class="refItemDesc">{{ $t('related_example__radiation') }}<br> {{ $t('related_example__waste_storage') }}</span> </div> </div> </div> </div> <div class="row"> <div class="col-xs-6"> <div class="firstRef refItem"> <div class="refItemTitle"> {{ $t('policy_group_003_short_title') }} </div> <div class="refItemBody"> <img class="refItemIcon" src="view-icon-02.70e13531.svg" alt="icon"> <span class="refItemDesc">{{ $t('related_example__fracking') }}<br> {{ $t('related_example__pipelines') }}<br> {{ $t('related_example__divestment') }}</span> </div> </div> </div> <div class="col-xs-6"> <div class="lastRef refItem"> <div class="refItemTitle"> {{ $t('policy_group_007_short_title') }} </div> <div class="refItemBody"> <img class="refItemIcon" src="view-icon-12.021629ae.svg" alt="icon"> <span class="refItemDesc">{{ $t('related_example__thorium_fission') }}<br> {{ $t('related_example__nuclear_fusion') }}</span> </div> </div> </div> </div> <div class="row"> <div class="col-xs-6"> <div class="firstRef refItem"> <div class="refItemTitle"> {{ $t('policy_group_004_short_title') }} </div> <div class="refItemBody"> <img class="refItemIcon" src="view-icon-08.4e452460.svg" alt="icon"> <span class="refItemDesc">{{ $t('related_example__biofuels') }}<br> {{ $t('related_example__wood_fuel') }}</span> </div> </div> </div> <div class="col-xs-6"> <div class="lastRef refItem"> <div class="refItemTitle"> {{ $t('policy_group_008_short_title') }} </div> <div class="refItemBody"> <img class="refItemIcon" src="view-icon-06.acd90610.svg" alt="icon"> <span class="refItemDesc">{{ $t('related_example__carbon_price') }}<br> {{ $t('related_example__cap_and_trade') }}</span> </div> </div> </div> </div> </div> <div class="col-xs-4"> <div class="row"> <div class="col-xs-12"> <div class="inputSectionHeader"> {{ $t('basic_section_header__transport') }} </div> </div> </div> <div class="row"> <div class="col-xs-6"> <div class="firstRef refItem"> <div class="refItemTitle"> {{ $t('policy_group_009_short_title') }} </div> <div class="refItemBody"> <img class="refItemIcon" src="view-icon-09.fa0764b8.svg" alt="icon"> <span class="refItemDesc">{{ $t('related_example__hybrid_cars') }}<br> {{ $t('related_example__walkability') }}<br> {{ $t('related_example__public_transportation') }}</span> </div> </div> </div> <div class="col-xs-6"> <div class="lastRef refItem"> <div class="refItemTitle"> {{ $t('policy_group_010_short_title') }} </div> <div class="refItemBody"> <img class="refItemIcon" src="view-icon-14.3bb6c495.svg" alt="icon"> <span class="refItemDesc">{{ $t('related_example__electric_vehicles') }}<br> {{ $t('related_example__battery_technology') }}<br> {{ $t('related_example__charging_infrastructure') }}</span> </div> </div> </div> </div> <div class="row"> <div class="col-xs-12"> <div class="inputSectionHeader"> {{ $t('basic_section_header__buildings_and_industry') }} </div> </div> </div> <div class="row"> <div class="col-xs-6"> <div class="firstRef refItem"> <div class="refItemTitle"> {{ $t('policy_group_011_short_title') }} </div> <div class="refItemBody"> <img class="refItemIcon" src="view-icon-16.ff0b70a6.svg" alt="icon"> <span class="refItemDesc">{{ $t('related_example__green_buildings') }}<br> {{ $t('related_example__efficient_industry') }}<br> {{ $t('related_example__energy_conservation') }}</span> </div> </div> </div> <div class="col-xs-6"> <div class="lastRef refItem"> <div class="refItemTitle"> {{ $t('policy_group_012_short_title') }} </div> <div class="refItemBody"> <img class="refItemIcon" src="view-icon-11.e76c7011.svg" alt="icon"> <span class="refItemDesc">{{ $t('related_example__electric_heating') }}<br> {{ $t('related_example__utility_scale_batteries') }}</span> </div> </div> </div> </div> <div class="row"> <div class="col-xs-12"> <div class="inputSectionHeader"> {{ $t('basic_section_header__growth') }} </div> </div> </div> <div class="row"> <div class="col-xs-6"> <div class="firstRef refItem"> <div class="refItemTitle"> {{ $t('policy_group_013_short_title') }} </div> <div class="refItemBody"> <img class="refItemIcon" src="view-icon-13.5a63a3c6.svg" alt="icon"> <span class="refItemDesc">{{ $t('related_example__womens_empowerment') }}<br> {{ $t('related_example__fertility_rates') }}</span> </div> </div> </div> <div class="col-xs-6"> <div class="lastRef refItem"> <div class="refItemTitle"> {{ $t('policy_group_014_short_title') }} </div> <div class="refItemBody"> <img class="refItemIcon" src="view-icon-15.4f4b5130.svg" alt="icon"> <span class="refItemDesc">{{ $t('related_example__gdp_per_person') }}<br> {{ $t('related_example__simplicity_movement') }}</span> </div> </div> </div> </div> </div> <div class="col-xs-4"> <div class="row"> <div class="col-xs-12"> <div class="inputSectionHeader"> {{ $t('basic_section_header__land_and_industry_emissions') }} </div> </div> </div> <div class="row"> <div class="col-xs-6"> <div class="firstRef refItem"> <div class="refItemTitle"> {{ $t('policy_group_015_short_title') }} </div> <div class="refItemBody"> <img class="refItemIcon" src="view-icon-10.ea23e8c7.svg" alt="icon"> <span class="refItemDesc">{{ $t('related_example__cutting_down_trees') }}<br> {{ $t('related_example__burning_forests') }}<br> {{ $t('related_example__soybean_and_palm_oil') }}</span> </div> </div> </div> <div class="col-xs-6"> <div class="lastRef refItem"> <div class="refItemTitle"> {{ $t('policy_group_016_short_title') }} </div> <div class="refItemBody"> <img class="refItemIcon" src="view-icon-03.6175a069.svg" alt="icon"> <span class="refItemDesc">{{ $t('related_example__methane_n2o_hfcs') }}<br> {{ $t('related_example__plant_based_diets') }}<br> {{ $t('related_example__fertilizer') }}</span> </div> </div> </div> </div> <div class="row"> <div class="col-xs-12"> <div class="inputSectionHeader"> {{ $t('basic_section_header__carbon_removal') }} </div> </div> </div> <div class="row"> <div class="col-xs-6"> <div class="firstRef refItem"> <div class="refItemTitle"> {{ $t('policy_group_017_short_title') }} </div> <div class="refItemBody"> <img class="refItemIcon" src="view-icon-17.1352ded2.svg" alt="icon"> <span class="refItemDesc">{{ $t('related_example__grow_more_trees') }}<br> {{ $t('related_example__new_forests') }}</span> </div> </div> </div> <div class="col-xs-6"> <div class="lastRef refItem"> <div class="refItemTitle"> {{ $t('policy_group_018_short_title') }} </div> <div class="refItemBody"> <img class="refItemIcon" src="view-icon-07.432a5908.svg" alt="icon"> <span class="refItemDesc">{{ $t('related_example__direct_air_capture') }}<br> {{ $t('related_example__beccs') }}<br> {{ $t('related_example__ag_soil_carbon') }}</span> </div> </div> </div> </div> <div class="logoPanel"> <a href="https://www.climateinteractive.org/" target="blank" class="ciLogo">
+																							<img src="CI_logo_gray.e55f345f.svg" class="logoImg" alt="Climate Interactive logo">
+																						</a> <a href="http://mitsloan.mit.edu/sustainability/" target="blank" class="mitLogo">
+																							<img src="mit_sustainability_logo_gray.ca5739d1.png" class="logoImg" alt="MIT Sustainability Initiative logo">
+																						</a> </div> <div class="logoPanel row"> <a href="https://www.climateinteractive.org/climate/tools/en-roads/en-roads-trainings/" target="blank" class="grayBtn">{{ $t('__en_roads_climate_ambassador_training') }}</a> </div> </div> </div> </div>  <div id="listingPanel"> <h1>{{ $t('__actions_outcomes') }}<span id="listingClose">
+																							<span class="fa-times-circle far">
+																							</span>
+																						</span>
+																					</h1> <div id="listingContent">
+																					</div> </div> </div> <script src="https://unpkg.com/vue/dist/vue.js">
+																					</script> <script src="https://unpkg.com/vue-i18n/dist/vue-i18n.js">
+																					</script> <script src="web.0098116b.js">
+																					</script> </body>
+																					</html>
